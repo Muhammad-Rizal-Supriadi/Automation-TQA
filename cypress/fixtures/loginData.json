@@ -1,0 +1,29 @@
+[
+    {
+      "username": "muhammadrizal42",
+      "password": "rizal123",
+      "expectedUrl": "account",
+      "expectedMessage": "My Account"
+    },
+    {
+      "username": "muhammadrizal42",
+      "password": "",
+      "expectedError": "Error: Incorrect login or password provided."
+    },
+    {
+      "username": "",
+      "password": "rizal123",
+      "expectedError": "Error: Incorrect login or password provided."
+    },
+    {
+      "username": "muhammadrizal42",
+      "password": "wrongpassword",
+      "expectedError": "Error: Incorrect login or password provided."
+    },
+    {
+      "username": "wronguser",
+      "password": "wrongpassword",
+      "expectedError": "Error: Incorrect login or password provided."
+    }
+  ]
+  
