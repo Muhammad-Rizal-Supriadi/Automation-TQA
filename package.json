@@ -8,10 +8,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress-open": "npx cypress open",
-    "cypress-run": "npx cypress run",
-    "cypress-headed": "npx cypress run --headed",
-    "cypress-dashboard": "npx cypress run --record --key 544dc270-4826-42e2-8a55-e292ad72eb9d"
+    "triggerAllTests-open": "npx cypress open",
+    "triggerAllTests-run": "npx cypress run",
+    "triggerAllTests-headed": "npx cypress run --headed",
+    "triggerAllTests-dashboard": "npx cypress run --record --key 544dc270-4826-42e2-8a55-e292ad72eb9d"
   },
   "devDependencies": {
     "cypress": "^14.3.0",
