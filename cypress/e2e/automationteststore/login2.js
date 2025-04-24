@@ -1,14 +1,11 @@
 /// <reference types="cypress"/>
 /// <reference types="cypress-xpath"/>
 
-import HomePage_PO from "../../support/pageObjects/Homepage_PO";
 
 describe("Test Automation Login - Various Conditions", () => {
 
     beforeEach(() => {
-        //cy.baseURL();
-        const homepage_PO = new HomePage_PO();
-        homepage_PO.visitHomepage();
+        cy.baseURL();
     });
 
     it("User input correct username and password", function() {
