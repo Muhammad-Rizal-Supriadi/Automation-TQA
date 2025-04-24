@@ -13,7 +13,6 @@ pipeline{
                     steps{
                         git url: 'https://github.com/Muhammad-Rizal-Supriadi/Automation-TQA.git'
                         bat 'npm install'
-                        bat 'npm update'
                         bat 'npm run %Script%'
                     }
                 }
@@ -24,7 +23,6 @@ pipeline{
                     steps{
                         git url: 'https://github.com/Muhammad-Rizal-Supriadi/Automation-TQA.git'
                         bat 'npm install'
-                        bat 'npm update'
                         bat 'npm run %Script%'
                     }
                 }
