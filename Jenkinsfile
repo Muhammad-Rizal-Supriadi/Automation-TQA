@@ -12,6 +12,20 @@ pipeline{
                     }
                     steps{
                         git url: 'https://github.com/Muhammad-Rizal-Supriadi/Automation-TQA.git'
+                        sh 'npm install'
+                        sh 'npm update'
+                        sh 'npm run %Script%'
+                    }
+                }
+                stage('Slave Node2'){
+                    agent{
+                        label "remote_node2"
+                    }
+                    steps{
+                        git url: 'https://github.com/Muhammad-Rizal-Supriadi/Automation-TQA.git'
+                        sh 'npm install'
+                        sh 'npm update'
+                        sh 'npm run %Script%'
                     }
                 }
             }
