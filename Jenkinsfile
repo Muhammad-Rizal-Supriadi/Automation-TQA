@@ -12,9 +12,9 @@ pipeline{
                     }
                     steps{
                         git url: 'https://github.com/Muhammad-Rizal-Supriadi/Automation-TQA.git'
-                        sh 'npm install'
-                        sh 'npm update'
-                        sh 'npm run %Script%'
+                        bat 'npm install'
+                        bat 'npm update'
+                        bat 'npm run %Script%'
                     }
                 }
                 stage('Slave Node2'){
